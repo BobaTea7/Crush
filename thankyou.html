@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay!</title>
+    <style>
+        /* Keeping the same dark theme for consistency */
+        body {
+            background-color: #1a1a1a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .card {
+            background: #2a2a2a;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            color: white;
+            max-width: 350px;
+            animation: popIn 0.5s ease;
+        }
+
+        h1 {
+            color: #ff4d6d;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .gif-container {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+
+        .back-btn {
+            text-decoration: none;
+            color: #888;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .back-btn:hover {
+            color: white;
+        }
+
+        /* A little animation to make the card pop onto the screen */
+        @keyframes popIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" alt="Cute Cat">
+        </div>
+        
+        <h1>I knew it! ♥️</h1>
+        <p>You're totally CuTe!</p>
+        
+        <a href="index.html" class="back-btn">Go back</a>
+    </div>
+
+</body>
+</html>

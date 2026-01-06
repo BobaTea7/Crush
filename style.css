@@ -1,0 +1,74 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Center everything in the card */
+.card {
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    width: 320px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between Yes and No */
+    margin-top: 20px;
+    height: 50px;
+}
+
+.button1, .button2 {
+    width: 80px;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.button1 { background-color: #4CAF50; }
+
+/* The 'No' button's starting spot */
+.no-handler {
+    width: 80px;
+    height: 45px;
+    position: relative;
+}
+
+.button2 {
+    background-color: #f44336;
+    position: fixed; /* 'fixed' lets it move across the whole screen */
+    z-index: 999;    /* Keeps it on top of everything else */
+    
+    /* This creates the smooth 'sliding' effect */
+    transition: all 0.3s ease-out; 
+    
+    /* Initial position so it starts near the 'Yes' button */
+    left: 50%;
+    width: 80px;
+    height: 45px;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* This makes it a circle */
+    object-fit: cover;  /* This prevents the photo from looking stretched */
+    border: 3px solid #ff4d6d;
+    margin-top: 10px;
+}
